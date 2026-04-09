@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Eckel Plumbing Co | Fast, Reliable Service in West Harrison, IN Since 1976</title>
+<meta name="description" content="Trusted plumbing in West Harrison, IN. Same-day service, upfront pricing, 30-minute response times. Licensed & insured. Call (812) 637-5800 today." />
+<meta name="theme-color" content="#0A1628" />
+<link rel="canonical" href="https://eckelplumbing.com/" />
+
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Eckel Plumbing Co | Fast, Reliable Service in West Harrison, IN" />
+<meta property="og:description" content="Trusted plumbing in West Harrison, IN. Same-day service, upfront pricing, 30-minute response times. Licensed & insured." />
+<meta property="og:url" content="https://eckelplumbing.com/" />
+<meta property="og:image" content="assets/hero-bg.png" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Instrument+Serif:ital@0;1&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Plumber",
+  "name": "Eckel Plumbing Co",
+  "image": "assets/hero-bg.png",
+  "telephone": "+1-812-637-5800",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "90 Harrison Brookville Rd",
+    "addressLocality": "West Harrison",
+    "addressRegion": "IN",
+    "postalCode": "47060",
+    "addressCountry": "US"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 39.2350, "longitude": -84.7685 },
+  "url": "https://eckelplumbing.com/",
+  "openingHours": "Mo-Su 07:30-18:30",
+  "priceRange": "$$",
+  "foundingDate": "1976",
+  "founder": { "@type": "Person", "name": "William E. Eckel" },
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.5", "reviewCount": "28" },
+  "areaServed": "West Harrison, IN and surrounding areas"
+}
+</script>
+
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  font-family: 'Manrope', system-ui, -apple-system, sans-serif;
+  font-weight: 400; line-height: 1.6;
+  color: var(--ink); background: var(--cream);
+  -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+button { font: inherit; border: 0; background: 0; cursor: pointer; color: inherit; }
+ul { list-style: none; }
+
+:root {
+  --navy: #0A1628;
+  --navy-2: #142238;
+  --navy-3: #1C2E48;
+  --cream: #F5F1EA;
+  --bone: #E8E2D5;
+  --ink: #0A1628;
+  --muted: #5A6578;
+  --line: rgba(10, 22, 40, 0.12);
+  --line-soft: rgba(10, 22, 40, 0.06);
+  --orange: #FF5B1F;
+  --orange-dark: #E04A0E;
+  --white: #FFFFFF;
+  --fs-mega: clamp(3.5rem, 9vw, 8rem);
+  --fs-h2: clamp(2rem, 4.5vw, 3.75rem);
+  --fs-micro: 0.75rem;
+  --max-w: 1320px;
+  --gutter: clamp(1.25rem, 4vw, 3.5rem);
+  --radius: 2px;
+  --ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --t-fast: 240ms;
+  --t-med: 480ms;
+}
+
+.wrap { width: 100%; max-width: var(--max-w); margin: 0 auto; padding-left: var(--gutter); padding-right: var(--gutter); }
+section { position: relative; }
+
+.display { font-family: 'Bebas Neue', 'Manrope', sans-serif; font-weight: 400; line-height: 0.88; letter-spacing: 0.005em; text-transform: uppercase; }
+.eyebrow { font-size: var(--fs-micro); letter-spacing: 0.24em; text-transform: uppercase; font-weight: 600; color: var(--muted); display: inline-flex; align-items: center; gap: 0.75rem; }
+.eyebrow::before { content: ''; width: 2rem; height: 1px; background: currentColor; display: inline-block; }
+.eyebrow.on-dark { color: rgba(245, 241, 234, 0.62); }
+
+.skip-link { position: absolute; top: -100px; left: 1rem; background: var(--orange); color: var(--white); padding: 0.75rem 1.25rem; z-index: 9999; font-weight: 700; border-radius: var(--radius); }
+.skip-link:focus { top: 1rem; }
+
+/* NAV */
+.nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  background: rgba(10, 22, 40, 0.82);
+  -webkit-backdrop-filter: blur(14px) saturate(1.3);
+  backdrop-filter: blur(14px) saturate(1.3);
+  border-bottom: 1px solid rgba(245, 241, 234, 0.08);
+  transform: translate3d(0, 0, 0);
+  transition: background var(--t-fast) var(--ease);
+}
+.nav-inner { display: flex; align-items: center; justify-content: space-between; height: clamp(64px, 7vw, 86px); color: var(--cream); gap: 1.5rem; }
+.logo { display: flex; align-items: center; gap: 0.75rem; font-family: 'Bebas Neue', sans-serif; font-size: clamp(1.25rem, 1.8vw, 1.5rem); letter-spacing: 0.06em; text-transform: uppercase; }
+.logo-mark { width: 56px; height: 56px; display: grid; place-items: center; flex-shrink: 0; transform: translate3d(0,0,0); transition: transform var(--t-fast) var(--ease); }
+.logo-mark img { width: 100%; height: 100%; object-fit: contain; display: block; }
+.logo:hover .logo-mark { transform: translate3d(0,0,0) scale(1.03); }
+footer .logo-mark { filter: brightness(0) invert(1); }
+.logo-text { display: flex; flex-direction: column; line-height: 1; gap: 3px; padding-left: 0.25rem; }
+.logo-text .sub { font-family: 'Manrope', sans-serif; font-size: 0.65rem; letter-spacing: 0.2em; color: rgba(245, 241, 234, 0.55); text-transform: uppercase; font-weight: 500; }
+.logo-text { display: flex; flex-direction: column; line-height: 1; gap: 3px; }
+.logo-text .main { font-size: 1em; }
+.logo-text .sub { font-family: 'Manrope', sans-serif; font-size: 0.55em; letter-spacing: 0.18em; color: rgba(245, 241, 234, 0.55); text-transform: uppercase; font-weight: 500; }
+
+.nav-links { display: flex; gap: clamp(1.5rem, 2.5vw, 2.5rem); font-size: 0.875rem; font-weight: 500; letter-spacing: 0.04em; }
+.nav-links a { position: relative; padding: 0.5rem 0; opacity: 0.78; transition: opacity var(--t-fast) var(--ease); }
+.nav-links a::after { content: ''; position: absolute; left: 0; right: 100%; bottom: 0; height: 2px; background: var(--orange); transition: right var(--t-fast) var(--ease); }
+.nav-links a:hover { opacity: 1; }
+.nav-links a:hover::after { right: 0; }
+
+.nav-cta { display: inline-flex; align-items: center; gap: 0.75rem; padding: 0.85rem 1.5rem; min-height: 44px; background: var(--orange); color: var(--white); font-weight: 700; letter-spacing: 0.02em; font-size: 0.9rem; transform: translate3d(0,0,0); transition: background var(--t-fast) var(--ease), transform var(--t-fast) var(--ease); }
+.nav-cta:hover { background: var(--orange-dark); transform: translate3d(0, -2px, 0); }
+.nav-cta svg { width: 16px; height: 16px; }
+
+.nav-burger { display: none; width: 44px; height: 44px; flex-direction: column; justify-content: center; align-items: center; gap: 5px; }
+.nav-burger span { display: block; width: 24px; height: 2px; background: var(--cream); }
+
+@media (max-width: 900px) {
+  .nav-links { display: none; }
+  .nav-burger { display: flex; }
+  .nav-cta .label-long { display: none; }
+}
+
+/* HERO */
+.hero { position: relative; background: var(--navy); color: var(--cream); padding-top: clamp(120px, 14vw, 180px); padding-bottom: clamp(80px, 10vw, 140px); overflow: hidden; isolation: isolate; }
+.hero::before {
+  content: ''; position: absolute; inset: 0;
+  background-image:
+    linear-gradient(180deg, rgba(10,22,40,0.92) 0%, rgba(10,22,40,0.78) 55%, rgba(10,22,40,0.96) 100%),
+    url('assets/hero-bg.png');
+  background-size: cover; background-position: center 30%;
+  z-index: -1; transform: translate3d(0,0,0);
+}
+.hero::after {
+  content: ''; position: absolute; inset: 0; pointer-events: none; z-index: -1;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.12 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  mix-blend-mode: overlay; opacity: 0.8;
+}
+.hero-grid { display: grid; grid-template-columns: 1fr auto; align-items: end; gap: 2rem; position: relative; }
+.hero-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem; margin-bottom: 2rem; font-size: var(--fs-micro); letter-spacing: 0.24em; text-transform: uppercase; color: rgba(245, 241, 234, 0.6); }
+.hero-meta .dot { width: 6px; height: 6px; background: var(--orange); border-radius: 50%; }
+.hero h1 { font-family: 'Bebas Neue', sans-serif; font-size: var(--fs-mega); line-height: 0.86; letter-spacing: -0.005em; margin-bottom: 2rem; max-width: 14ch; }
+.hero h1 .accent { font-family: 'Instrument Serif', Georgia, serif; font-style: italic; text-transform: none; color: var(--orange); font-weight: 400; letter-spacing: -0.02em; }
+.hero-sub { font-size: clamp(1.05rem, 1.4vw, 1.25rem); max-width: 54ch; color: rgba(245, 241, 234, 0.82); margin-bottom: 2.5rem; line-height: 1.55; }
+.hero-ctas { display: flex; flex-wrap: wrap; gap: 1rem; align-items: center; margin-bottom: 3rem; }
+
+.btn { display: inline-flex; align-items: center; gap: 0.85rem; padding: 1.15rem 1.75rem; min-height: 56px; font-weight: 700; font-size: 0.95rem; letter-spacing: 0.04em; text-transform: uppercase; transform: translate3d(0,0,0); transition: all var(--t-fast) var(--ease); border: 1.5px solid transparent; }
+.btn svg { width: 18px; height: 18px; flex-shrink: 0; }
+.btn-primary { background: var(--orange); color: var(--white); border-color: var(--orange); }
+.btn-primary:hover { background: var(--orange-dark); border-color: var(--orange-dark); transform: translate3d(0,-2px,0); box-shadow: 0 12px 32px rgba(255,91,31,0.35); }
+.btn-ghost { background: transparent; color: var(--cream); border-color: rgba(245,241,234,0.35); }
+.btn-ghost:hover { background: var(--cream); color: var(--navy); border-color: var(--cream); }
+.btn-dark { background: var(--navy); color: var(--cream); border-color: var(--navy); }
+.btn-dark:hover { background: var(--navy-2); border-color: var(--navy-2); transform: translate3d(0,-2px,0); }
+
+.hero-badge { justify-self: end; align-self: end; text-align: right; max-width: 220px; padding: 1.5rem; border: 1px solid rgba(245,241,234,0.18); background: rgba(10,22,40,0.45); -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px); transform: translate3d(0,0,0); }
+.hero-badge .num { font-family: 'Bebas Neue', sans-serif; font-size: 4rem; line-height: 0.85; color: var(--orange); display: block; }
+.hero-badge .num sup { font-size: 0.35em; color: rgba(245,241,234,0.7); }
+.hero-badge .label { font-size: 0.75rem; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(245,241,234,0.68); display: block; margin-top: 0.5rem; }
+
+.trust-bar { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; margin-top: 4rem; border-top: 1px solid rgba(245,241,234,0.14); border-bottom: 1px solid rgba(245,241,234,0.14); }
+.trust-item { padding: 1.75rem 1.5rem; border-right: 1px solid rgba(245,241,234,0.14); display: flex; align-items: center; gap: 1rem; }
+.trust-item:last-child { border-right: 0; }
+.trust-item .icon { width: 38px; height: 38px; flex-shrink: 0; display: grid; place-items: center; color: var(--orange); }
+.trust-item svg { width: 28px; height: 28px; }
+.trust-item .text { display: flex; flex-direction: column; gap: 2px; }
+.trust-item .text .top { font-family: 'Bebas Neue', sans-serif; font-size: 1.25rem; letter-spacing: 0.04em; line-height: 1; }
+.trust-item .text .bottom { font-size: 0.72rem; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(245,241,234,0.55); }
+
+@media (max-width: 900px) {
+  .hero-grid { grid-template-columns: 1fr; }
+  .hero-badge { justify-self: start; text-align: left; }
+  .trust-bar { grid-template-columns: repeat(2, 1fr); }
+  .trust-item:nth-child(2) { border-right: 0; }
+  .trust-item:nth-child(1), .trust-item:nth-child(2) { border-bottom: 1px solid rgba(245,241,234,0.14); }
+}
+@media (max-width: 560px) {
+  .trust-bar { grid-template-columns: 1fr; }
+  .trust-item { border-right: 0; border-bottom: 1px solid rgba(245,241,234,0.14); }
+  .trust-item:last-child { border-bottom: 0; }
+}
+
+/* STATS */
+.stats { background: var(--orange); color: var(--white); padding: clamp(3rem, 6vw, 5rem) 0; position: relative; overflow: hidden; }
+.stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; }
+.stat { padding: 0 2rem; border-right: 1px solid rgba(255,255,255,0.22); display: flex; flex-direction: column; gap: 0.5rem; }
+.stat:first-child { padding-left: 0; }
+.stat:last-child { border-right: 0; padding-right: 0; }
+.stat .n { font-family: 'Bebas Neue', sans-serif; font-size: clamp(4rem, 8vw, 7.5rem); line-height: 0.85; letter-spacing: -0.005em; display: flex; align-items: baseline; gap: 0.15em; }
+.stat .n sup { font-size: 0.4em; font-weight: 400; color: rgba(255,255,255,0.8); }
+.stat .lbl { font-size: 0.78rem; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,255,255,0.92); font-weight: 600; max-width: 18ch; }
+@media (max-width: 900px) {
+  .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 2.5rem 0; }
+  .stat { padding: 0 1.25rem; }
+  .stat:nth-child(2) { border-right: 0; padding-right: 0; }
+  .stat:nth-child(3) { padding-left: 0; }
+}
+
+/* SECTIONS */
+.section { padding: clamp(5rem, 10vw, 9rem) 0; position: relative; }
+.section.dark { background: var(--navy); color: var(--cream); }
+.section.cream { background: var(--cream); color: var(--ink); }
+.section.bone { background: var(--bone); color: var(--ink); }
+
+.sec-head { display: grid; grid-template-columns: 1fr auto; align-items: end; gap: 2rem; margin-bottom: clamp(3rem, 6vw, 5rem); }
+.sec-head h2 { font-family: 'Bebas Neue', sans-serif; font-size: var(--fs-h2); line-height: 0.88; letter-spacing: -0.003em; max-width: 16ch; margin-top: 1.25rem; }
+.sec-head h2 .italic { font-family: 'Instrument Serif', Georgia, serif; font-style: italic; text-transform: none; color: var(--orange); font-weight: 400; }
+.sec-head .side { max-width: 38ch; font-size: 1rem; color: var(--muted); line-height: 1.6; padding-bottom: 0.5rem; }
+@media (max-width: 780px) { .sec-head { grid-template-columns: 1fr; } }
+
+/* SERVICES */
+.services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); }
+.service-card { background: var(--cream); padding: 2.25rem 2rem 2rem; position: relative; overflow: hidden; display: flex; flex-direction: column; gap: 1rem; transition: background var(--t-fast) var(--ease); transform: translate3d(0,0,0); }
+.service-card::before { content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 3px; background: var(--orange); transform: scaleX(0); transform-origin: left; transition: transform var(--t-med) var(--ease); }
+.service-card:hover { background: var(--bone); }
+.service-card:hover::before { transform: scaleX(1); }
+.service-num { font-family: 'Bebas Neue', sans-serif; font-size: 1rem; letter-spacing: 0.1em; color: var(--orange); display: flex; align-items: center; gap: 0.6rem; }
+.service-num::after { content: ''; width: 1.5rem; height: 1px; background: var(--orange); display: inline-block; }
+.service-img { aspect-ratio: 4 / 3; overflow: hidden; background: var(--navy); position: relative; border-radius: var(--radius); }
+.service-img img { width: 100%; height: 100%; object-fit: cover; transform: translate3d(0,0,0) scale(1.02); transition: transform var(--t-med) var(--ease); filter: saturate(0.9) contrast(1.05); }
+.service-card:hover .service-img img { transform: translate3d(0,0,0) scale(1.08); }
+.service-title { font-family: 'Bebas Neue', sans-serif; font-size: 1.75rem; line-height: 1; letter-spacing: 0.005em; margin-top: 0.25rem; }
+.service-desc { font-size: 0.95rem; color: var(--muted); line-height: 1.6; flex: 1; }
+.service-link { display: inline-flex; align-items: center; gap: 0.6rem; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink); margin-top: 0.5rem; transition: color var(--t-fast) var(--ease); }
+.service-link svg { width: 14px; height: 14px; transition: transform var(--t-fast) var(--ease); }
+.service-link:hover { color: var(--orange); }
+.service-link:hover svg { transform: translate3d(4px,0,0); }
+@media (max-width: 980px) { .services-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px) { .services-grid { grid-template-columns: 1fr; } }
+
+/* ABOUT */
+.about-grid { display: grid; grid-template-columns: 1.05fr 1fr; gap: clamp(2rem, 5vw, 5rem); align-items: center; }
+.about-img-wrap { position: relative; transform: translate3d(0,0,0); }
+.about-img { aspect-ratio: 4 / 5; overflow: hidden; background: var(--navy); }
+.about-img img { width: 100%; height: 100%; object-fit: cover; filter: saturate(0.85) contrast(1.08); }
+.about-stamp { position: absolute; right: -1.5rem; bottom: 3rem; background: var(--orange); color: var(--white); padding: 1.5rem 1.75rem; max-width: 220px; transform: translate3d(0,0,0) rotate(-2deg); box-shadow: 0 20px 40px rgba(10,22,40,0.18); }
+.about-stamp .year { font-family: 'Bebas Neue', sans-serif; font-size: 3rem; line-height: 0.85; display: block; }
+.about-stamp .txt { font-size: 0.7rem; letter-spacing: 0.16em; text-transform: uppercase; display: block; margin-top: 0.35rem; color: rgba(255,255,255,0.9); }
+.about-text h2 { font-family: 'Bebas Neue', sans-serif; font-size: var(--fs-h2); line-height: 0.88; max-width: 14ch; margin: 1rem 0 2rem; }
+.about-text h2 .italic { font-family: 'Instrument Serif', Georgia, serif; font-style: italic; color: var(--orange); text-transform: none; font-weight: 400; }
+.about-text .bio { font-size: 1.05rem; line-height: 1.7; color: var(--muted); margin-bottom: 2rem; }
+.about-sig { display: flex; align-items: center; gap: 1rem; padding-top: 2rem; border-top: 1px solid var(--line); }
+.about-sig .name { font-family: 'Instrument Serif', Georgia, serif; font-size: 1.5rem; color: var(--ink); font-style: italic; }
+.about-sig .role { font-size: 0.72rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--muted); margin-top: 0.25rem; }
+.about-badges { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 2rem; }
+.badge { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.55rem 1rem; border: 1px solid var(--line); font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 600; color: var(--ink); background: var(--cream); }
+.badge::before { content: ''; width: 6px; height: 6px; background: var(--orange); border-radius: 50%; }
+@media (max-width: 880px) { .about-grid { grid-template-columns: 1fr; } .about-stamp { right: 1rem; } }
+
+/* TESTIMONIALS */
+.testimonials-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+.testimonial { background: var(--navy-2); padding: 2.5rem 2rem; position: relative; color: var(--cream); display: flex; flex-direction: column; gap: 1.5rem; transform: translate3d(0,0,0); transition: transform var(--t-fast) var(--ease), border-color var(--t-fast) var(--ease); border: 1px solid rgba(245,241,234,0.08); }
+.testimonial:hover { transform: translate3d(0,-4px,0); border-color: rgba(255,91,31,0.4); }
+.testimonial::before { content: '\201C'; font-family: 'Instrument Serif', Georgia, serif; font-size: 7rem; line-height: 0.8; color: var(--orange); position: absolute; top: 1rem; left: 1.5rem; opacity: 0.3; }
+.testimonial .stars { display: flex; gap: 3px; color: var(--orange); position: relative; }
+.testimonial .stars svg { width: 16px; height: 16px; }
+.testimonial .quote { font-size: 1.05rem; line-height: 1.55; font-weight: 400; color: rgba(245,241,234,0.92); flex: 1; position: relative; }
+.testimonial .author { display: flex; align-items: center; gap: 0.85rem; padding-top: 1.25rem; border-top: 1px solid rgba(245,241,234,0.12); }
+.testimonial .avatar { width: 42px; height: 42px; display: grid; place-items: center; background: var(--orange); color: var(--white); font-family: 'Bebas Neue', sans-serif; font-size: 1.1rem; flex-shrink: 0; }
+.testimonial .author .info { display: flex; flex-direction: column; line-height: 1.3; }
+.testimonial .author .name { font-weight: 700; font-size: 0.95rem; color: var(--cream); }
+.testimonial .author .ctx { font-size: 0.72rem; color: rgba(245,241,234,0.55); letter-spacing: 0.05em; margin-top: 2px; }
+@media (max-width: 980px) { .testimonials-grid { grid-template-columns: 1fr; max-width: 560px; margin: 0 auto; } }
+
+.rating-strip { display: flex; align-items: center; gap: 2rem; padding: 2rem 0; margin-top: 3rem; border-top: 1px solid rgba(245,241,234,0.12); border-bottom: 1px solid rgba(245,241,234,0.12); flex-wrap: wrap; justify-content: space-between; }
+.rating-strip .item { display: flex; align-items: center; gap: 0.85rem; color: rgba(245,241,234,0.85); font-size: 0.8rem; letter-spacing: 0.08em; text-transform: uppercase; }
+.rating-strip .item strong { font-family: 'Bebas Neue', sans-serif; font-size: 1.8rem; color: var(--orange); font-weight: 400; }
+
+/* WHY */
+.why-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; }
+.why-item { display: flex; flex-direction: column; gap: 1rem; padding-top: 1.5rem; border-top: 2px solid var(--ink); }
+.why-item .n { font-family: 'Bebas Neue', sans-serif; font-size: 1rem; color: var(--orange); letter-spacing: 0.08em; }
+.why-item h3 { font-family: 'Bebas Neue', sans-serif; font-size: 1.4rem; line-height: 1; letter-spacing: 0.005em; }
+.why-item p { font-size: 0.92rem; color: var(--muted); line-height: 1.65; }
+@media (max-width: 980px) { .why-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 560px) { .why-grid { grid-template-columns: 1fr; } }
+
+/* MAP */
+.map-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 0; border: 1px solid var(--line); }
+.map-info { padding: clamp(2rem, 4vw, 3.5rem); background: var(--cream); display: flex; flex-direction: column; gap: 1.5rem; }
+.map-info h3 { font-family: 'Bebas Neue', sans-serif; font-size: 2rem; line-height: 0.95; max-width: 14ch; }
+.map-info p { font-size: 0.95rem; color: var(--muted); line-height: 1.65; }
+.map-towns { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.5rem 1.5rem; margin-top: 0.5rem; }
+.map-towns li { display: flex; align-items: center; gap: 0.6rem; font-size: 0.9rem; color: var(--ink); padding: 0.35rem 0; border-bottom: 1px solid var(--line-soft); }
+.map-towns li::before { content: ''; width: 6px; height: 6px; background: var(--orange); flex-shrink: 0; }
+.map-frame { position: relative; min-height: 460px; background: var(--navy); overflow: hidden; }
+.map-frame iframe { width: 100%; height: 100%; border: 0; filter: grayscale(0.35) contrast(1.08); }
+@media (max-width: 880px) { .map-grid { grid-template-columns: 1fr; } .map-frame { min-height: 360px; } }
+
+/* CONTACT */
+.contact-grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: clamp(2rem, 5vw, 5rem); align-items: start; }
+.contact-head h2 { font-family: 'Bebas Neue', sans-serif; font-size: var(--fs-h2); line-height: 0.88; max-width: 14ch; margin: 1rem 0 1.5rem; }
+.contact-head h2 .italic { font-family: 'Instrument Serif', Georgia, serif; font-style: italic; color: var(--orange); text-transform: none; font-weight: 400; }
+.contact-head p { color: var(--muted); font-size: 1.05rem; max-width: 44ch; line-height: 1.6; }
+.contact-info { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 2.5rem; }
+.info-block { padding: 1.5rem; border: 1px solid var(--line); display: flex; flex-direction: column; gap: 0.6rem; background: rgba(255,255,255,0.4); }
+.info-block .label { font-size: 0.7rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+.info-block .val { font-family: 'Bebas Neue', sans-serif; font-size: 1.5rem; line-height: 1.05; letter-spacing: 0.005em; color: var(--ink); }
+.info-block a.val:hover { color: var(--orange); }
+
+.form { background: var(--bone); padding: clamp(2rem, 4vw, 3rem); display: flex; flex-direction: column; gap: 1.25rem; border: 1px solid var(--line); }
+.form-title { font-family: 'Bebas Neue', sans-serif; font-size: 1.75rem; line-height: 1; margin-bottom: 0.5rem; }
+.form label { font-size: 0.7rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--muted); font-weight: 600; margin-bottom: 0.35rem; display: block; }
+.form input, .form select, .form textarea { width: 100%; padding: 0.95rem 1rem; min-height: 48px; border: 1px solid var(--line); background: var(--cream); font: inherit; color: var(--ink); border-radius: var(--radius); transition: border-color var(--t-fast) var(--ease), background var(--t-fast) var(--ease); }
+.form textarea { min-height: 110px; resize: vertical; }
+.form input:focus, .form select:focus, .form textarea:focus { outline: none; border-color: var(--orange); background: var(--white); }
+.form button[type="submit"] { margin-top: 0.5rem; }
+@media (max-width: 880px) { .contact-grid { grid-template-columns: 1fr; } .contact-info { grid-template-columns: 1fr; } }
+
+/* CTA STRIP */
+.cta-strip { background: var(--navy); color: var(--cream); padding: clamp(4rem, 8vw, 7rem) 0; position: relative; overflow: hidden; }
+.cta-strip::before { content: 'CALL NOW'; position: absolute; bottom: -3rem; left: 50%; transform: translateX(-50%); font-family: 'Bebas Neue', sans-serif; font-size: clamp(8rem, 22vw, 20rem); line-height: 0.8; color: rgba(245,241,234,0.035); pointer-events: none; white-space: nowrap; }
+.cta-inner { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 2rem; position: relative; }
+.cta-inner h2 { font-family: 'Bebas Neue', sans-serif; font-size: var(--fs-h2); line-height: 0.9; max-width: 14ch; }
+.cta-inner h2 .italic { font-family: 'Instrument Serif', Georgia, serif; font-style: italic; color: var(--orange); text-transform: none; font-weight: 400; }
+.cta-inner p { font-size: 1.05rem; color: rgba(245,241,234,0.7); margin-top: 1rem; max-width: 48ch; }
+@media (max-width: 780px) { .cta-inner { grid-template-columns: 1fr; } }
+
+/* FOOTER */
+footer { background: #060F1C; color: rgba(245,241,234,0.72); padding: clamp(4rem, 7vw, 6rem) 0 2rem; position: relative; }
+.footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 3rem; padding-bottom: 3rem; border-bottom: 1px solid rgba(245,241,234,0.08); }
+.footer-tag { margin-top: 1.5rem; font-size: 0.95rem; max-width: 30ch; line-height: 1.6; }
+.footer-col h4 { font-family: 'Bebas Neue', sans-serif; font-size: 1rem; letter-spacing: 0.12em; color: var(--cream); margin-bottom: 1.25rem; }
+.footer-col ul { display: flex; flex-direction: column; gap: 0.6rem; }
+.footer-col a { font-size: 0.9rem; transition: color var(--t-fast) var(--ease); }
+.footer-col a:hover { color: var(--orange); }
+.footer-col p { font-size: 0.9rem; line-height: 1.65; }
+.footer-col .hours { margin-top: 0.5rem; font-size: 0.85rem; color: rgba(245,241,234,0.55); }
+.socials { display: flex; gap: 0.6rem; margin-top: 1.25rem; flex-wrap: wrap; }
+.socials a { width: 40px; height: 40px; display: grid; place-items: center; border: 1px solid rgba(245,241,234,0.15); transition: all var(--t-fast) var(--ease); color: rgba(245,241,234,0.72); }
+.socials a:hover { border-color: var(--orange); color: var(--orange); background: rgba(255,91,31,0.08); }
+.socials svg { width: 16px; height: 16px; }
+.footer-base { display: flex; justify-content: space-between; align-items: center; padding-top: 2rem; gap: 1rem; flex-wrap: wrap; font-size: 0.78rem; color: rgba(245,241,234,0.5); }
+.footer-base a { color: var(--orange); font-weight: 600; transition: color var(--t-fast) var(--ease); }
+.footer-base a:hover { color: var(--white); }
+@media (max-width: 900px) { .footer-grid { grid-template-columns: 1fr 1fr; gap: 2.5rem; } }
+@media (max-width: 560px) { .footer-grid { grid-template-columns: 1fr; } }
+
+/* REVEAL */
+.reveal { opacity: 0; transform: translate3d(0, 30px, 0); transition: opacity 900ms var(--ease), transform 900ms var(--ease); will-change: opacity, transform; }
+.reveal.in { opacity: 1; transform: translate3d(0, 0, 0); }
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1; transform: none; transition: none; }
+  * { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
+</style>
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a href="#top" class="logo" aria-label="Eckel Plumbing Co home">
+      <span class="logo-mark"><img src="assets/scraped/site-06.jpg" alt="Eckel Plumbing Co" /></span>
+      <span class="logo-text">
+        <span class="sub">West Harrison · Est. 1976</span>
+      </span>
+    </a>
+    <nav aria-label="Primary">
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#area">Service Area</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="tel:+18126375800" class="nav-cta" aria-label="Call Eckel Plumbing at (812) 637-5800">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+      <span class="label-long">(812) 637-5800</span>
+    </a>
+    <button class="nav-burger" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="main">
+<a id="top"></a>
+
+<section class="hero" aria-labelledby="hero-h">
+  <div class="wrap">
+    <div class="hero-meta">
+      <span class="dot"></span>
+      <span>West Harrison, IN · 7 Days a Week</span>
+      <span class="dot"></span>
+      <span>Licensed & Insured</span>
+    </div>
+    <div class="hero-grid">
+      <div>
+        <h1 id="hero-h" class="display">
+          Incredibly <span class="accent">reliable</span><br>
+          plumbing when<br>
+          you need it most.
+        </h1>
+        <p class="hero-sub">
+          Family-owned and serving West Harrison since 1976. Fast response, upfront pricing, and no surprises on the bill. We answer the phone and we show up when we say we will.
+        </p>
+        <div class="hero-ctas">
+          <a href="tel:+18126375800" class="btn btn-primary">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+            Call (812) 637-5800
+          </a>
+          <a href="#contact" class="btn btn-ghost">
+            Request an Estimate
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="hero-badge">
+        <span class="num">48<sup>yrs</sup></span>
+        <span class="label">Family-Owned<br>Since 1976</span>
+      </div>
+    </div>
+
+    <div class="trust-bar" role="list">
+      <div class="trust-item" role="listitem">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+        <div class="text"><span class="top">4.5 / 5.0 Google</span><span class="bottom">28 Verified Reviews</span></div>
+      </div>
+      <div class="trust-item" role="listitem">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+        <div class="text"><span class="top">30-Min Response</span><span class="bottom">Emergency Average</span></div>
+      </div>
+      <div class="trust-item" role="listitem">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s-8-4.5-8-12V5l8-3 8 3v5c0 7.5-8 12-8 12z"/><polyline points="9 11 11 13 15 9"/></svg></div>
+        <div class="text"><span class="top">Licensed & Insured</span><span class="bottom">Fully Bonded</span></div>
+      </div>
+      <div class="trust-item" role="listitem">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></div>
+        <div class="text"><span class="top">Upfront Pricing</span><span class="bottom">No Surprises</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section cream" id="services" aria-labelledby="services-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="eyebrow">What We Do</span>
+        <h2 id="services-h" class="display">Expert plumbing,<br><span class="italic">done right</span> the first time.</h2>
+      </div>
+      <p class="side">Six core services. Same trucks, same crew, same standard of care — whether it's a midnight pipe burst or a full ADA remodel.</p>
+    </div>
+
+    <div class="services-grid">
+      <article class="service-card reveal">
+        <span class="service-num">01 · Plumbing</span>
+        <div class="service-img"><img src="assets/scraped/site-08.jpg" alt="White bathroom with toilet and walk-in shower installation" loading="lazy" /></div>
+        <h3 class="service-title">Toilet Repair &<br>Installation</h3>
+        <p class="service-desc">From leaks and clogs to full replacements, we fix toilet problems fast without leaving a mess. Techs carry parts on the truck so most jobs are done same-day.</p>
+        <a href="#contact" class="service-link">Book Service <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+      </article>
+      <article class="service-card reveal">
+        <span class="service-num">02 · Drains</span>
+        <div class="service-img"><img src="assets/scraped/site-07.jpg" alt="Plumbing inspection equipment and tools" loading="lazy" /></div>
+        <h3 class="service-title">Drain Cleaning</h3>
+        <p class="service-desc">Clogged drains cleared quickly with professional equipment. We don't just push the blockage down — we clear it completely the first time.</p>
+        <a href="#contact" class="service-link">Book Service <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+      </article>
+      <article class="service-card reveal">
+        <span class="service-num">03 · Pipes</span>
+        <div class="service-img"><img src="assets/scraped/site-01.png" alt="Plumber tightening pipe with wrench" loading="lazy" /></div>
+        <h3 class="service-title">Pipe Repair</h3>
+        <p class="service-desc">Leaky pipes, burst lines, or corrosion handled right away. We stop the leak, assess the damage, and give you a quote before we start any work.</p>
+        <a href="#contact" class="service-link">Book Service <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+      </article>
+      <article class="service-card reveal">
+        <span class="service-num">04 · Gas</span>
+        <div class="service-img"><img src="assets/scraped/site-02.png" alt="Premium kitchen installation showing gas-line capable appliances" loading="lazy" /></div>
+        <h3 class="service-title">Gas Line Service</h3>
+        <p class="service-desc">Safe, code-compliant gas line installation and repair for appliances, water heaters, and heating systems. Licensed for residential and commercial work.</p>
+        <a href="#contact" class="service-link">Book Service <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+      </article>
+      <article class="service-card reveal">
+        <span class="service-num">05 · Fixtures</span>
+        <div class="service-img"><img src="assets/scraped/site-11.jpg" alt="Modern kitchen faucet and countertop installation" loading="lazy" /></div>
+        <h3 class="service-title">Faucets & Fixtures</h3>
+        <p class="service-desc">Dripping faucets, broken handles, or full fixture upgrades installed cleanly. We match your existing style or help you pick something new.</p>
+        <a href="#contact" class="service-link">Book Service <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+      </article>
+      <article class="service-card reveal">
+        <span class="service-num">06 · Remodel</span>
+        <div class="service-img"><img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=1200&q=80" alt="Accessible bathroom renovation with modern fixtures" loading="lazy" /></div>
+        <h3 class="service-title">ADA Bathroom<br>Renovations</h3>
+        <p class="service-desc">Full accessible bathroom remodels designed for safety and independence. We handle the plumbing, fixtures, and layout — all work permitted and code-compliant.</p>
+        <a href="#contact" class="service-link">Book Service <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section bone" id="about" aria-labelledby="about-h">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="about-img-wrap reveal">
+        <div class="about-img"><img src="assets/scraped/site-12.jpeg" alt="Luxe bathroom remodel completed by Eckel Plumbing" loading="lazy" /></div>
+        <div class="about-stamp"><span class="year">1976</span><span class="txt">Family-Owned<br>Since Day One</span></div>
+      </div>
+      <div class="about-text reveal">
+        <span class="eyebrow">Our Story</span>
+        <h2 id="about-h" class="display">A family name<br>you can <span class="italic">trust</span>.</h2>
+        <p class="bio">William E. Eckel started this company in West Harrison nearly 50 years ago with a simple belief: show up when you say you will, charge what you quote, and treat every home like it's your own. That's still how we operate. Our team has served the same families and neighborhoods for decades — licensed, insured, and local.</p>
+        <div class="about-badges">
+          <span class="badge">Licensed</span>
+          <span class="badge">Insured</span>
+          <span class="badge">Bonded</span>
+          <span class="badge">Local</span>
+        </div>
+        <div class="about-sig">
+          <div>
+            <div class="name">William E. Eckel</div>
+            <div class="role">Founder · Master Plumber</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section dark" id="reviews" aria-labelledby="reviews-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="eyebrow on-dark">The Neighborhood Says</span>
+        <h2 id="reviews-h" class="display" style="color:var(--cream);">Phenomenal people,<br><span class="italic">real reviews</span>.</h2>
+      </div>
+      <p class="side" style="color:rgba(245,241,234,0.68);">Verified quotes pulled from Google, Angi, Birdeye, and Yelp. 4.5 out of 5 stars across 28+ reviews.</p>
+    </div>
+
+    <div class="testimonials-grid">
+      <article class="testimonial reveal">
+        <div class="stars" aria-label="5 out of 5 stars">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <p class="quote">I've used Eckel Plumbing several times and they have been incredibly reliable and timely. Phenomenal people to work with.</p>
+        <div class="author">
+          <div class="avatar">BN</div>
+          <div class="info"><span class="name">Brian Newport</span><span class="ctx">Multiple service calls</span></div>
+        </div>
+      </article>
+
+      <article class="testimonial reveal">
+        <div class="stars" aria-label="5 out of 5 stars">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <p class="quote">The plumbers were beyond professional, honest and very, very reliable. They sent the Kennedy boys within literally a half hour and handled the issue with ease.</p>
+        <div class="author">
+          <div class="avatar">KR</div>
+          <div class="info"><span class="name">Kriston R.</span><span class="ctx">Emergency repair</span></div>
+        </div>
+      </article>
+
+      <article class="testimonial reveal">
+        <div class="stars" aria-label="5 out of 5 stars">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <p class="quote">Everyone that came was very professional, knowledgeable, courteous, called to tell us when to expect them. Use Eckel Plumbing with high confidence. A+++++.</p>
+        <div class="author">
+          <div class="avatar">RC</div>
+          <div class="info"><span class="name">Remodel Client</span><span class="ctx">ADA bathroom renovation</span></div>
+        </div>
+      </article>
+    </div>
+
+    <div class="rating-strip">
+      <div class="item"><strong>4.5★</strong> Google Rating</div>
+      <div class="item"><strong>4.7★</strong> Angi</div>
+      <div class="item"><strong>4.5★</strong> Birdeye</div>
+      <div class="item"><strong>A+</strong> BBB Accredited</div>
+      <div class="item"><strong>28+</strong> Verified Reviews</div>
+    </div>
+  </div>
+</section>
+
+<section class="section cream" aria-labelledby="why-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="eyebrow">Why Eckel</span>
+        <h2 id="why-h" class="display">Four things we<br><span class="italic">never</span> cut corners on.</h2>
+      </div>
+    </div>
+    <div class="why-grid">
+      <div class="why-item reveal"><span class="n">01</span><h3>Upfront Pricing</h3><p>We quote the job before we start. You'll know exactly what you're paying before any work begins. No hidden fees, no overtime charges.</p></div>
+      <div class="why-item reveal"><span class="n">02</span><h3>Fast Response</h3><p>We answer the phone and we show up fast. Most emergency calls get a tech on-site within 30 minutes. Plumbing problems don't wait — neither do we.</p></div>
+      <div class="why-item reveal"><span class="n">03</span><h3>Clean & Professional</h3><p>Our techs wear shoe covers, clean up after every job, and treat your home with respect. You won't find a mess when we're done.</p></div>
+      <div class="why-item reveal"><span class="n">04</span><h3>Licensed & Local</h3><p>Serving West Harrison and the surrounding area since 1976. Fully licensed and insured, with decades of experience you can trust.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section bone" id="area" aria-labelledby="area-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="eyebrow">Where We Work</span>
+        <h2 id="area-h" class="display">Serving West Harrison<br>& <span class="italic">surrounding</span> towns.</h2>
+      </div>
+    </div>
+    <div class="map-grid">
+      <div class="map-info">
+        <h3>Your Neighborhood Plumber</h3>
+        <p>Based at 90 Harrison Brookville Rd in West Harrison, we cover the tri-state area along the IN/OH/KY border. If you're within 30 miles, we'll be there same-day on most calls.</p>
+        <ul class="map-towns">
+          <li>West Harrison, IN</li>
+          <li>Harrison, OH</li>
+          <li>Lawrenceburg, IN</li>
+          <li>Cleves, OH</li>
+          <li>Brookville, IN</li>
+          <li>Cheviot, OH</li>
+          <li>Guilford, IN</li>
+          <li>Whitewater, IN</li>
+          <li>New Baltimore, OH</li>
+          <li>Bright, IN</li>
+        </ul>
+        <a href="https://www.google.com/maps/dir//Eckel+Plumbing+Co,90+Harrison+Brookville+Rd,+West+Harrison,+IN+47060" class="btn btn-dark" target="_blank" rel="noopener" style="margin-top:1rem; align-self:flex-start;">
+          Get Directions
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+      <div class="map-frame">
+        <iframe
+          src="https://www.google.com/maps?q=Eckel+Plumbing+Co,+90+Harrison+Brookville+Rd,+West+Harrison,+IN+47060&output=embed"
+          loading="lazy"
+          title="Map showing Eckel Plumbing Co at 90 Harrison Brookville Rd, West Harrison, IN 47060"
+          referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section cream" id="contact" aria-labelledby="contact-h">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="contact-head reveal">
+        <span class="eyebrow">Get in Touch</span>
+        <h2 id="contact-h" class="display">Plumbing problem?<br>We're <span class="italic">here to help</span>.</h2>
+        <p>Call us now or send a quick note. For emergencies, always call directly — we answer the phone 7 days a week, 7:30 AM to 6:30 PM.</p>
+        <div class="contact-info">
+          <div class="info-block">
+            <span class="label">Call Anytime</span>
+            <a href="tel:+18126375800" class="val">(812) 637-5800</a>
+          </div>
+          <div class="info-block">
+            <span class="label">Hours</span>
+            <span class="val" style="font-size:1rem; line-height:1.4; font-family:'Manrope',sans-serif; font-weight:600;">Mon – Sun<br>7:30 AM – 6:30 PM</span>
+          </div>
+          <div class="info-block" style="grid-column: 1 / -1;">
+            <span class="label">Visit Us</span>
+            <a href="https://www.google.com/maps/dir//Eckel+Plumbing+Co,90+Harrison+Brookville+Rd,+West+Harrison,+IN+47060" class="val" target="_blank" rel="noopener" style="font-size:1rem; line-height:1.4; font-family:'Manrope',sans-serif; font-weight:600;">90 Harrison Brookville Rd, West Harrison, IN 47060</a>
+          </div>
+        </div>
+      </div>
+
+      <form class="form reveal" onsubmit="event.preventDefault(); alert('Thanks — we will call you back shortly. For emergencies, please call (812) 637-5800 directly.'); this.reset();">
+        <div class="form-title">Request a Callback</div>
+        <div>
+          <label for="f-name">Your name</label>
+          <input id="f-name" name="name" type="text" required autocomplete="name" />
+        </div>
+        <div>
+          <label for="f-phone">Phone number</label>
+          <input id="f-phone" name="phone" type="tel" required autocomplete="tel" />
+        </div>
+        <div>
+          <label for="f-service">Service needed</label>
+          <select id="f-service" name="service">
+            <option>Toilet repair / install</option>
+            <option>Drain cleaning</option>
+            <option>Pipe repair / leak</option>
+            <option>Gas line service</option>
+            <option>Faucets &amp; fixtures</option>
+            <option>ADA bathroom remodel</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div>
+          <label for="f-msg">What's going on?</label>
+          <textarea id="f-msg" name="message" placeholder="Brief description of the issue..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">
+          Send Request
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="cta-strip" aria-label="Call to action">
+  <div class="wrap cta-inner">
+    <div>
+      <span class="eyebrow on-dark">Leak Emergency?</span>
+      <h2 class="display" style="color:var(--cream); margin-top:1rem;">Leaking now? <span class="italic">Call now.</span></h2>
+      <p>A real person answers every call. Most emergency jobs get a truck rolling within 30 minutes.</p>
+    </div>
+    <a href="tel:+18126375800" class="btn btn-primary" style="font-size:1.05rem; padding:1.35rem 2rem;">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+      (812) 637-5800
+    </a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#top" class="logo">
+          <span class="logo-mark"><img src="assets/logo-mark.png" alt="Eckel Plumbing EP monogram" /></span>
+          <span class="logo-text">
+            <span class="main">Eckel Plumbing</span>
+            <span class="sub">West Harrison · Est. 1976</span>
+          </span>
+        </a>
+        <p class="footer-tag">Fast, honest plumbing you can count on. Family-owned and serving the tri-state area since 1976.</p>
+        <div class="socials">
+          <a href="https://www.facebook.com/EckelPlumbing/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+          <a href="https://www.bbb.org/us/in/west-harrison/profile/plumber/eckel-plumbing-co-0292-16500" target="_blank" rel="noopener" aria-label="Better Business Bureau"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s-8-4.5-8-12V5l8-3 8 3v5c0 7.5-8 12-8 12z"/></svg></a>
+          <a href="https://nextdoor.com/pages/eckel-plumbing-co/" target="_blank" rel="noopener" aria-label="Nextdoor"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></a>
+          <a href="https://www.angi.com/companylist/us/in/west-harrison/eckel-plumbing-co-reviews-364385.htm" target="_blank" rel="noopener" aria-label="Angi reviews"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Toilet Repair</a></li>
+          <li><a href="#services">Drain Cleaning</a></li>
+          <li><a href="#services">Pipe Repair</a></li>
+          <li><a href="#services">Gas Line Service</a></li>
+          <li><a href="#services">Faucets & Fixtures</a></li>
+          <li><a href="#services">ADA Renovations</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Visit</h4>
+        <p>90 Harrison Brookville Rd<br>West Harrison, IN 47060</p>
+        <h4 style="margin-top:1.5rem;">Hours</h4>
+        <p class="hours">Mon – Sun<br>7:30 AM – 6:30 PM</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Call Us</h4>
+        <p><a href="tel:+18126375800" style="font-family: 'Bebas Neue', sans-serif; font-size: 1.5rem; color: var(--cream); letter-spacing: 0.02em;">(812) 637-5800</a></p>
+        <p style="margin-top:1rem;">We answer the phone 7 days a week. No answering service.</p>
+      </div>
+    </div>
+
+    <div class="footer-base">
+      <div>© 2026 Eckel Plumbing Co. All rights reserved. Licensed &amp; Insured.</div>
+      <div>Built by <a href="https://nule.io" target="_blank" rel="noopener">nule.io</a></div>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function() {
+  if (!('IntersectionObserver' in window)) {
+    document.querySelectorAll('.reveal').forEach(el => el.classList.add('in'));
+    return;
+  }
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in');
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+})();
+
+(function() {
+  const nav = document.querySelector('.nav');
+  if (!nav) return;
+  const onScroll = () => {
+    if (window.scrollY > 40) nav.style.background = 'rgba(10, 22, 40, 0.94)';
+    else nav.style.background = 'rgba(10, 22, 40, 0.82)';
+  };
+  window.addEventListener('scroll', onScroll, { passive: true });
+})();
+
+(function() {
+  const burger = document.querySelector('.nav-burger');
+  const links = document.querySelector('.nav-links');
+  if (!burger || !links) return;
+  burger.addEventListener('click', () => {
+    const isOpen = links.dataset.open === 'true';
+    if (isOpen) {
+      links.removeAttribute('style');
+      links.dataset.open = 'false';
+    } else {
+      Object.assign(links.style, {
+        display: 'flex', position: 'fixed', top: '0', left: '0', right: '0', bottom: '0',
+        background: '#0A1628', flexDirection: 'column', justifyContent: 'center',
+        alignItems: 'center', gap: '2rem', fontSize: '1.75rem', zIndex: '1000',
+        margin: '0', padding: '0', listStyle: 'none'
+      });
+      links.dataset.open = 'true';
+      links.onclick = (e) => {
+        if (e.target.tagName === 'A') { links.removeAttribute('style'); links.dataset.open = 'false'; }
+      };
+    }
+  });
+})();
+</script>
+</body>
+</html>

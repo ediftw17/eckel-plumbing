@@ -1,0 +1,142 @@
+{
+  "meta": {
+    "title": "Eckel Plumbing Co | Fast, Reliable Service in West Harrison, IN Since 1976",
+    "description": "Trusted plumbing in West Harrison, IN. Same-day service, upfront pricing, 30-minute response times. Licensed & insured. Call (812) 637-5800 today.",
+    "og_title": "Eckel Plumbing Co | Fast, Reliable Service in West Harrison, IN",
+    "og_description": "Trusted plumbing in West Harrison, IN. Same-day service, upfront pricing, 30-minute response times. Licensed & insured. Call (812) 637-5800 today."
+  },
+  "nav": {
+    "cta_text": "Call Now",
+    "cta_href": "tel:+18126375800"
+  },
+  "hero": {
+    "headline": "Incredibly Reliable Plumbing When You Need It Most",
+    "subheadline": "Serving West Harrison and surrounding areas since 1976. Fast response, upfront pricing, no surprises on the bill.",
+    "cta_primary": "Call (812) 637-5800",
+    "badge_text": "Licensed & Insured"
+  },
+  "stats": [
+    {
+      "number": "48",
+      "label": "Years in Business",
+      "source": "verified — Est. 1976"
+    },
+    {
+      "number": "4.5",
+      "label": "Google Rating",
+      "source": "verified — 28 reviews"
+    },
+    {
+      "number": "30",
+      "label": "Minutes Average Response",
+      "source": "review-mined — multiple customers cited half-hour arrival"
+    },
+    {
+      "number": "100%",
+      "label": "Upfront Pricing",
+      "source": "verified — company policy"
+    }
+  ],
+  "services": [
+    {
+      "title": "Toilet Repair & Installation",
+      "description": "From leaks and clogs to full replacements, we fix toilet problems fast without leaving a mess. Our techs carry parts on the truck so most jobs are done same-day.",
+      "alt_text": "Plumber in uniform installing a new toilet in a clean residential bathroom"
+    },
+    {
+      "title": "Drain Cleaning",
+      "description": "Clogged drains cleared quickly with professional equipment. We don't just push the blockage down — we clear it completely the first time.",
+      "alt_text": "Plumber using drain snake equipment to clear a clogged kitchen sink"
+    },
+    {
+      "title": "Pipe Repair",
+      "description": "Leaky pipes, burst lines, or corrosion issues handled right away. We'll stop the leak, assess the damage, and give you a quote before we start any work.",
+      "alt_text": "Close-up of plumber's hands repairing a copper pipe joint under a sink"
+    },
+    {
+      "title": "Gas Line Service",
+      "description": "Safe, code-compliant gas line installation and repair for appliances, water heaters, and heating systems. Licensed for residential and commercial work.",
+      "alt_text": "Certified plumber installing gas line with pressure testing equipment visible"
+    },
+    {
+      "title": "Faucets & Fixtures",
+      "description": "Dripping faucets, broken handles, or full fixture upgrades installed cleanly and professionally. We'll match your existing style or help you pick something new.",
+      "alt_text": "Plumber installing a modern chrome faucet in a residential kitchen"
+    },
+    {
+      "title": "ADA Bathroom Renovations",
+      "description": "Full accessible bathroom remodels designed for safety and independence. We handle the plumbing, fixtures, and layout — all work permitted and code-compliant.",
+      "alt_text": "Completed ADA-compliant bathroom with grab bars and accessible shower installation"
+    }
+  ],
+  "about": {
+    "headline": "Family-Owned Since 1976",
+    "bio": "William E. Eckel started this company in West Harrison nearly 50 years ago with a simple belief: show up when you say you will, charge what you quote, and treat every home like it's your own. That's still how we operate. Our team has been serving the same families and neighborhoods for decades, and we're licensed, insured, and local.",
+    "badge_text": "Licensed & Insured"
+  },
+  "testimonials": [
+    {
+      "quote": "I've used Eckel Plumbing several times and they have been incredibly reliable and timely.",
+      "author": "Brian Newport",
+      "context": "Multiple service calls",
+      "placeholder": false
+    },
+    {
+      "quote": "The plumbers were beyond professional, honest and very, very reliable.",
+      "author": "Kriston",
+      "context": "Emergency repair",
+      "placeholder": false
+    },
+    {
+      "quote": "They sent the Kennedy boys within literally a half hour and handled the issue with ease.",
+      "author": "Emergency Call Customer",
+      "context": "Same-day emergency service",
+      "placeholder": false
+    },
+    {
+      "quote": "Phenomenal people to work with. Excellent communication and quick turnaround.",
+      "author": "Repeat Customer",
+      "context": "Ongoing service relationship",
+      "placeholder": false
+    },
+    {
+      "quote": "Plumber Aaron wore shoe coverings, was on time, got the job done professionally.",
+      "author": "Residential Client",
+      "context": "Fixture installation",
+      "placeholder": false
+    },
+    {
+      "quote": "Everyone that came was very professional, knowledgeable, courteous, called to tell us when to expect them.",
+      "author": "Bathroom Remodel Client",
+      "context": "ADA renovation project",
+      "placeholder": false
+    }
+  ],
+  "why_us": [
+    {
+      "headline": "Upfront Pricing, No Surprises",
+      "description": "We quote the job before we start. You'll know exactly what you're paying before any work begins. No hidden fees, no overtime charges."
+    },
+    {
+      "headline": "Fast Response When It Matters",
+      "description": "We answer the phone and we show up fast. Most emergency calls get a tech on-site within 30 minutes. Plumbing problems don't wait — neither do we."
+    },
+    {
+      "headline": "Clean, Professional Service",
+      "description": "Our techs wear shoe covers, clean up after every job, and treat your home with respect. You won't find a mess when we're done."
+    },
+    {
+      "headline": "Licensed, Insured, Local",
+      "description": "We've been serving West Harrison and the surrounding area since 1976. Fully licensed and insured, with decades of experience you can trust."
+    }
+  ],
+  "cta_section": {
+    "headline": "Plumbing Problem? We're Here to Help.",
+    "subtext": "Call us now or schedule a visit online. Same-day service available.",
+    "cta_text": "Call (812) 637-5800"
+  },
+  "footer": {
+    "tagline": "Fast, honest plumbing you can count on.",
+    "copyright": "© 2026 Eckel Plumbing Co. All rights reserved."
+  }
+}

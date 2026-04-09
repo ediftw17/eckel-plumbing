@@ -1,0 +1,148 @@
+{
+  "scraped_extra": [
+    {
+      "local_path": "assets/scraped/site-01.png",
+      "source": "eckelplumbing.com",
+      "original_url": "https://eckelplumbing.com/wp-content/uploads/2014/06/Eckel_Wrench1_Slider-940x360.png",
+      "description": "Plumber wrench working on pipe",
+      "width": 940,
+      "height": 360,
+      "best_use": "hero"
+    },
+    {
+      "local_path": "assets/scraped/site-02.png",
+      "source": "eckelplumbing.com",
+      "original_url": "https://eckelplumbing.com/wp-content/uploads/2014/06/Eckel_Res_Slider-940x360.png",
+      "description": "Residential plumbing work on fixtures",
+      "width": 940,
+      "height": 360,
+      "best_use": "hero"
+    },
+    {
+      "local_path": "assets/scraped/site-03.png",
+      "source": "eckelplumbing.com",
+      "original_url": "https://eckelplumbing.com/wp-content/uploads/2014/06/Eckel_Sink_Slider-940x360.png",
+      "description": "Modern sink installation and fixtures",
+      "width": 940,
+      "height": 360,
+      "best_use": "hero"
+    },
+    {
+      "local_path": "assets/scraped/site-04.jpg",
+      "source": "eckelplumbing.com",
+      "original_url": "https://eckelplumbing.com/wp-content/uploads/2014/06/Eckel_FB_HP.jpg",
+      "description": "Professional plumbing service team photo",
+      "width": 600,
+      "height": 600,
+      "best_use": "about"
+    },
+    {
+      "local_path": "assets/scraped/site-05.jpg",
+      "source": "eckelplumbing.com",
+      "original_url": "https://eckelplumbing.com/wp-content/uploads/2014/06/yellow-pages.jpg",
+      "description": "Bathroom renovation with yellow cabinetry",
+      "width": 1296,
+      "height": 968,
+      "best_use": "gallery"
+    },
+    {
+      "local_path": "assets/scraped/site-06.jpg",
+      "source": "eckelplumbing.com",
+      "original_url": "https://eckelplumbing.com/wp-content/uploads/2014/06/xxxx.jpg",
+      "description": "Large plumbing installation project",
+      "width": 2109,
+      "height": 733,
+      "best_use": "gallery"
+    },
+    {
+      "local_path": "assets/scraped/site-07.jpg",
+      "source": "eckelplumbing.com",
+      "original_url": "https://eckelplumbing.com/wp-content/uploads/2014/06/video-plumbing-inspection.jpg",
+      "description": "Plumbing inspection equipment and tools",
+      "width": 425,
+      "height": 282,
+      "best_use": "service"
+    },
+    {
+      "local_path": "assets/scraped/site-08.jpg",
+      "source": "eckelplumbing.com",
+      "original_url": "https://eckelplumbing.com/wp-content/uploads/2014/06/traditional-showers.jpg",
+      "description": "Traditional bathroom shower installation",
+      "width": 640,
+      "height": 480,
+      "best_use": "service"
+    },
+    {
+      "local_path": "assets/scraped/site-09.jpg",
+      "source": "eckelplumbing.com",
+      "original_url": "https://eckelplumbing.com/wp-content/uploads/2014/06/stinky_lady.jpg",
+      "description": "Vintage plumbing fixture restoration",
+      "width": 1024,
+      "height": 664,
+      "best_use": "gallery"
+    },
+    {
+      "local_path": "assets/scraped/site-10.jpg",
+      "source": "eckelplumbing.com",
+      "original_url": "https://eckelplumbing.com/wp-content/uploads/2014/06/SS.jpg",
+      "description": "Stainless steel kitchen faucet install",
+      "width": 1600,
+      "height": 900,
+      "best_use": "service"
+    },
+    {
+      "local_path": "assets/scraped/site-11.jpg",
+      "source": "eckelplumbing.com",
+      "original_url": "https://eckelplumbing.com/wp-content/uploads/2014/06/pasadena-faucet-and-kitchen-progress-117.jpg",
+      "description": "Modern kitchen faucet and countertop work",
+      "width": 1600,
+      "height": 1066,
+      "best_use": "gallery"
+    },
+    {
+      "local_path": "assets/scraped/site-12.jpeg",
+      "source": "eckelplumbing.com",
+      "original_url": "https://eckelplumbing.com/wp-content/uploads/2014/06/bathroom_2.jpeg",
+      "description": "Bathroom vanity and fixture installation",
+      "width": 1400,
+      "height": 800,
+      "best_use": "service"
+    },
+    {
+      "local_path": "assets/scraped/site-13.jpg",
+      "source": "eckelplumbing.com",
+      "original_url": "https://eckelplumbing.com/wp-content/uploads/2014/06/Eckel_FB_HP.jpg",
+      "description": "Company profile and team representation",
+      "width": 600,
+      "height": 600,
+      "best_use": "about"
+    },
+    {
+      "local_path": "assets/scraped/site-14.png",
+      "source": "eckelplumbing.com",
+      "original_url": "https://eckelplumbing.com/wp-content/uploads/2014/06/Eckel_Wrench1_Slider.png",
+      "description": "Professional plumbing wrench work",
+      "width": 940,
+      "height": 360,
+      "best_use": "hero"
+    },
+    {
+      "local_path": "assets/scraped/site-15.png",
+      "source": "eckelplumbing.com",
+      "original_url": "https://eckelplumbing.com/wp-content/uploads/2014/06/Eckel_Sink_Slider.png",
+      "description": "Quality sink and fixture expertise",
+      "width": 940,
+      "height": 360,
+      "best_use": "hero"
+    },
+    {
+      "local_path": "assets/scraped/site-16.png",
+      "source": "eckelplumbing.com",
+      "original_url": "https://eckelplumbing.com/wp-content/uploads/2014/06/Eckel_Res_Slider.png",
+      "description": "Residential plumbing solutions",
+      "width": 940,
+      "height": 360,
+      "best_use": "hero"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "business_name": "Eckel Plumbing Co",
+  "slug": "eckel-plumbing",
+  "niche": "plumbing",
+  "website_url": "https://eckelplumbing.com/",
+  "phone": "(812) 637-5800",
+  "address": "90 Harrison Brookville Rd, West Harrison, IN 47060",
+  "hours": "Mon-Sun: 7:30 AM - 6:30 PM",
+  "owner_name": "William E. Eckel",
+  "services": [
+    "Toilet repair & installation",
+    "Drain cleaning",
+    "Pipe repair",
+    "Gas line service",
+    "Faucets & fixtures",
+    "ADA bathroom renovations"
+  ],
+  "google_rating": 4.5,
+  "review_count": 28,
+  "google_maps_url": "https://www.google.com/maps/search/Eckel+Plumbing+90+Harrison+Brookville+West+Harrison+IN",
+  "aesthetic_notes": "Modern, trustworthy, blue-collar plumbing brand. Clean typography, strong CTAs, real photos from their site. Safari GPU hints enforced.",
+  "build_date": "2026-04-10",
+  "niche_profile": "projects/website-building-agency/niches/plumbing.md",
+  "auditors_dir": "projects/website-building-agency/auditors/"
+}

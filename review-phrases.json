@@ -1,0 +1,195 @@
+{
+  "business": "Eckel Plumbing Co",
+  "address": "90 Harrison Brookville Rd, West Harrison, IN 47060",
+  "phone": "(812) 637-5800",
+  "total_reviews_found": 30,
+  "aggregate_rating": 4.5,
+  "platforms": {
+    "Birdeye": 4.5,
+    "Angi": 4.7,
+    "Chamber of Commerce": 4.4
+  },
+  "themes": [
+    "fast response / quick service",
+    "professional and clean",
+    "reliable and trustworthy",
+    "fair pricing relative to quality",
+    "excellent communication"
+  ],
+  "hero_copy_candidates": [
+    "Incredibly reliable and timely plumbing service",
+    "Professional plumbers beyond reliable",
+    "Quick, qualified and reliable service",
+    "Phenomenal people to work with",
+    "Fast response with excellent communication",
+    "Clean professionals who stand by their work",
+    "Family-owned since 1976, trusted expertise",
+    "A+ rating for plumbing excellence",
+    "Half-hour response time, handled with ease",
+    "Friendly, experienced, and always professional",
+    "Thorough diagnosis and quality workmanship",
+    "Honest service from start to finish"
+  ],
+  "quotes": [
+    {
+      "text": "I've used Eckel Plumbing several times and they have been incredibly reliable and timely",
+      "author": "Brian Newport",
+      "rating": 5,
+      "source": "Birdeye",
+      "date": "5 months ago (Oct 2025)"
+    },
+    {
+      "text": "The plumbers were beyond professional, honest and very, very reliable",
+      "author": "Kriston",
+      "rating": 5,
+      "source": "Birdeye",
+      "date": "7 months ago (Aug 2025)"
+    },
+    {
+      "text": "They had 2 young men with them and they were very hard working",
+      "author": "Jonas French",
+      "rating": 5,
+      "source": "Birdeye",
+      "date": "a year ago (2024)"
+    },
+    {
+      "text": "Plumber Aaron wore shoe coverings, was on time, got the job done professionally",
+      "author": "Aaron (client name not provided)",
+      "rating": 5,
+      "source": "Angi",
+      "date": "Recent"
+    },
+    {
+      "text": "The quote Aaron gave was much lower than I expected",
+      "author": "Client",
+      "rating": 5,
+      "source": "Angi",
+      "date": "Recent"
+    },
+    {
+      "text": "Service man called in advance, arrived on time, clean and professional",
+      "author": "Client",
+      "rating": 5,
+      "source": "Angi",
+      "date": "Recent"
+    },
+    {
+      "text": "They sent the Kennedy boys within literally a half hour and handled the issue with ease",
+      "author": "Client",
+      "rating": 5,
+      "source": "Google/Multiple",
+      "date": "Recent"
+    },
+    {
+      "text": "Use Eckel Plumbing with high confidence. A+++++",
+      "author": "Client",
+      "rating": 5,
+      "source": "Google/Multiple",
+      "date": "Recent"
+    },
+    {
+      "text": "Friendly, experienced people over the years have always done a great job for me. I give them an A+",
+      "author": "Repeat Customer",
+      "rating": 5,
+      "source": "Google/Multiple",
+      "date": "Recent"
+    },
+    {
+      "text": "Phenomenal people to work with. Excellent communication and quick turnaround",
+      "author": "Client",
+      "rating": 5,
+      "source": "Google/Multiple",
+      "date": "Recent"
+    },
+    {
+      "text": "Everyone that came was very professional, knowledgeable, courteous, called to tell us when to expect them",
+      "author": "Bathroom Remodel Client",
+      "rating": 5,
+      "source": "Google/Multiple",
+      "date": "Recent"
+    },
+    {
+      "text": "They quickly diagnosed an issue with our water heater and pointed out a nearby leaky pipe",
+      "author": "Client",
+      "rating": 5,
+      "source": "Google/Multiple",
+      "date": "Recent"
+    },
+    {
+      "text": "Jim showed up on time, polite and courteous, replaced tub shower faucet professionally",
+      "author": "Jim (Technician)",
+      "rating": 5,
+      "source": "Google/Multiple",
+      "date": "Recent"
+    },
+    {
+      "text": "Service man fixed shower controls and checked & adjusted water heater settings",
+      "author": "Client",
+      "rating": 5,
+      "source": "Google/Multiple",
+      "date": "Recent"
+    },
+    {
+      "text": "Eckel Plumbing is clean - they don't leave a mess when finished",
+      "author": "Client",
+      "rating": 5,
+      "source": "Angi",
+      "date": "Recent"
+    },
+    {
+      "text": "They let customers know what they are doing and what will be involved in a job",
+      "author": "Client",
+      "rating": 5,
+      "source": "Angi",
+      "date": "Recent"
+    },
+    {
+      "text": "Professional company that stood by their customers",
+      "author": "Client",
+      "rating": 5,
+      "source": "Google/Multiple",
+      "date": "Recent"
+    },
+    {
+      "text": "Prompt, professional, and does good work with fair pricing for quality",
+      "author": "Client",
+      "rating": 4,
+      "source": "Multiple Platforms",
+      "date": "Recent"
+    },
+    {
+      "text": "We had both original bathrooms remodeled and everyone was very professional and knowledgeable",
+      "author": "Renovation Client",
+      "rating": 5,
+      "source": "Yelp",
+      "date": "Recent"
+    },
+    {
+      "text": "Quick, qualified and reliable service when you need it",
+      "author": "Birdeye Profile",
+      "rating": 4.5,
+      "source": "Birdeye",
+      "date": "Profile Description"
+    }
+  ],
+  "sentiment_summary": {
+    "positive_themes": [
+      "Speed of response (30-minute response time cited)",
+      "Professional demeanor and cleanliness",
+      "Honesty and reliability in diagnosis",
+      "Fair pricing relative to quality",
+      "Communication and courtesy",
+      "Experienced, knowledgeable technicians",
+      "Consistency across multiple jobs"
+    ],
+    "price_positioning": "Premium pricing but justified by quality - customers note 'you get what you pay for'",
+    "customer_loyalty": "Multiple mentions of repeat business over years, strong recommendations",
+    "service_excellence": "A+ ratings common, high confidence recommendations, phenomenal feedback"
+  },
+  "sources": [
+    "https://reviews.birdeye.com/eckel-plumbing-co-167037623053022",
+    "https://www.angi.com/companylist/us/in/west-harrison/eckel-plumbing-co-reviews-364385.htm",
+    "https://www.yelp.com/biz/eckel-plumbing-company-west-harrison",
+    "https://www.bbb.org/us/in/west-harrison/profile/plumber/eckel-plumbing-co-0292-16500"
+  ]
+}

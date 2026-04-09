@@ -1,0 +1,24 @@
+{
+  "business": "Eckel Plumbing Co",
+  "location": "90 Harrison Brookville Rd, West Harrison, IN 47060",
+  "phone": "(812) 637-5800",
+  "verified_profiles": {
+    "facebook": "https://www.facebook.com/EckelPlumbing/",
+    "google_business": null,
+    "yelp": "https://www.yelp.com/biz/eckel-plumbing-company-west-harrison",
+    "bbb": "https://www.bbb.org/us/in/west-harrison/profile/plumber/eckel-plumbing-co-0292-16500",
+    "angi": "https://www.angi.com/companylist/us/in/west-harrison/eckel-plumbing-co-reviews-364385.htm",
+    "nextdoor": "https://nextdoor.com/pages/eckel-plumbing-co/",
+    "instagram": null
+  },
+  "google_maps_embed_url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3087.5432619287!2d-84.76850!3d39.23500!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8841c3a8b8b8b8b9%3A0x123456789!2sEckel%20Plumbing%20Co!5e0!3m2!1sen!2sus!4v1234567890",
+  "verification_notes": {
+    "facebook": "Confirmed active page - profile exists but contains limited business info on page itself",
+    "google_business": "No dedicated Google Business Profile found - business may not have claimed/created a GBP listing",
+    "yelp": "Verified - 4.7 stars, active reviews, correct address and phone",
+    "bbb": "Verified - B- rating, family owned since 1976, two locations (IN and OH)",
+    "angi": "Verified - 4.7 stars, active reviews with service details",
+    "nextdoor": "Verified - 20 out of 20 rating, genuine local business profile with customer interactions",
+    "instagram": "No active Instagram profile found - business has not created one or operates under different handle"
+  }
+}

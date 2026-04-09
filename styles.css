@@ -1,0 +1,1318 @@
+/* ===================================================================
+   Eckel Plumbing Co — Professional Plumbing Services
+   West Harrison, IN
+   Built 2026-04-10
+   =================================================================== */
+
+/* ===================================================================
+   1. CSS Custom Properties
+   =================================================================== */
+
+:root {
+  /* Colors — Professional Plumbing Palette */
+  --color-primary: #1A3A5C;       /* Navy - trust, professionalism */
+  --color-primary-dark: #0F2438;  /* Darker navy for hover states */
+  --color-primary-light: #2B5278; /* Lighter navy for accents */
+  --color-accent: #E8621A;        /* Orange - urgency, action */
+  --color-accent-dark: #C85316;   /* Darker orange for hover */
+  --color-accent-light: #FF7F3F;  /* Lighter orange for tints */
+  --color-neutral-900: #1E293B;   /* Body text */
+  --color-neutral-700: #64748B;   /* Secondary text */
+  --color-neutral-400: #94A3B8;   /* Muted/disabled */
+  --color-neutral-100: #F1F5F9;   /* Section backgrounds */
+  --color-neutral-50: #F8FAFC;    /* Light wash backgrounds */
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  /* RGB values for rgba() usage */
+  --color-primary-rgb: 26, 58, 92;
+  --color-accent-rgb: 232, 98, 26;
+
+  /* Typography — Inter for clean, working-class credibility */
+  --font-heading: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* Type scale — fluid, using clamp() */
+  --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);      /* 12-14px */
+  --text-sm: clamp(0.875rem, 0.8rem + 0.35vw, 1rem);         /* 14-16px */
+  --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);      /* 16-18px */
+  --text-lg: clamp(1.125rem, 1rem + 0.5vw, 1.375rem);        /* 18-22px */
+  --text-xl: clamp(1.25rem, 1.1rem + 0.75vw, 1.75rem);       /* 20-28px */
+  --text-2xl: clamp(1.5rem, 1.2rem + 1.5vw, 2.25rem);        /* 24-36px */
+  --text-3xl: clamp(1.875rem, 1.4rem + 2.5vw, 3rem);         /* 30-48px */
+  --text-4xl: clamp(2.25rem, 1.5rem + 3.5vw, 4rem);          /* 36-64px */
+  --text-5xl: clamp(3rem, 2rem + 4vw, 5.5rem);               /* 48-88px — Hero H1 */
+
+  /* Spacing */
+  --space-1: 0.25rem;   /* 4px */
+  --space-2: 0.5rem;    /* 8px */
+  --space-3: 0.75rem;   /* 12px */
+  --space-4: 1rem;      /* 16px */
+  --space-5: 1.25rem;   /* 20px */
+  --space-6: 1.5rem;    /* 24px */
+  --space-8: 2rem;      /* 32px */
+  --space-10: 2.5rem;   /* 40px */
+  --space-12: 3rem;     /* 48px */
+  --space-16: 4rem;     /* 64px */
+  --space-20: 5rem;     /* 80px */
+  --space-24: 6rem;     /* 96px */
+  --space-32: 8rem;     /* 128px */
+
+  /* Section vertical padding */
+  --section-py: clamp(4rem, 8vw, 8rem);
+
+  /* Layout */
+  --container-max: 1200px;
+  --container-px: clamp(1rem, 4vw, 2rem);
+
+  /* Border radius */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.04);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.08), 0 2px 6px rgba(0,0,0,0.04);
+  --shadow-lg: 0 10px 30px rgba(0,0,0,0.10), 0 4px 12px rgba(0,0,0,0.06);
+  --shadow-xl: 0 20px 50px rgba(0,0,0,0.12), 0 8px 20px rgba(0,0,0,0.08);
+
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+  --transition-slow: 400ms ease;
+
+  /* Z-index scale */
+  --z-below: -1;
+  --z-base: 0;
+  --z-raised: 10;
+  --z-overlay: 100;
+  --z-modal: 200;
+  --z-nav: 300;
+  --z-emergency: 350;
+  --z-toast: 400;
+}
+
+/* ===================================================================
+   2. CSS Reset & Base
+   =================================================================== */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  color: var(--color-neutral-900);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img, video, svg {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font: inherit;
+}
+
+input, textarea, select {
+  font: inherit;
+}
+
+/* ===================================================================
+   3. Skip Link
+   =================================================================== */
+
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: var(--space-4);
+  padding: var(--space-2) var(--space-4);
+  background: var(--color-accent);
+  color: var(--color-white);
+  border-radius: var(--radius-md);
+  z-index: var(--z-toast);
+  font-weight: 600;
+  transition: top var(--transition-fast);
+}
+
+.skip-link:focus {
+  top: var(--space-4);
+}
+
+/* ===================================================================
+   4. Typography
+   =================================================================== */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  line-height: 1.2;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+h1 { font-size: var(--text-5xl); }
+h2 { font-size: var(--text-3xl); }
+h3 { font-size: var(--text-2xl); }
+h4 { font-size: var(--text-xl); }
+h5 { font-size: var(--text-lg); }
+h6 { font-size: var(--text-base); }
+
+p {
+  margin-bottom: var(--space-4);
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+/* ===================================================================
+   5. Layout Utilities
+   =================================================================== */
+
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding-inline: var(--container-px);
+}
+
+section {
+  padding-block: var(--section-py);
+}
+
+/* ===================================================================
+   6. Emergency Banner
+   =================================================================== */
+
+.emergency-banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: var(--z-emergency);
+  background: var(--color-accent);
+  color: var(--color-white);
+  padding: var(--space-3) var(--space-4);
+  text-align: center;
+  font-size: var(--text-sm);
+  font-weight: 600;
+  box-shadow: var(--shadow-md);
+}
+
+.emergency-banner a {
+  color: var(--color-white);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.emergency-banner a:hover {
+  text-decoration-thickness: 2px;
+}
+
+/* Offset body when emergency banner is present */
+body.has-emergency-banner {
+  padding-top: 52px; /* Approximate banner height */
+}
+
+/* ===================================================================
+   7. Navigation
+   =================================================================== */
+
+nav[aria-label="Main navigation"] {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: var(--z-nav);
+  background: var(--color-white);
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow var(--transition-base);
+}
+
+body.has-emergency-banner nav[aria-label="Main navigation"] {
+  top: 52px; /* Push nav below emergency banner */
+}
+
+.nav__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  min-height: 72px;
+}
+
+.nav__logo {
+  display: flex;
+  align-items: center;
+}
+
+.nav__logo img {
+  height: 40px;
+  width: auto;
+}
+
+.nav__links {
+  display: none; /* shown on desktop via breakpoint */
+  flex-direction: row;
+  gap: var(--space-8);
+  align-items: center;
+}
+
+.nav__links a {
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--color-neutral-700);
+  transition: color var(--transition-fast);
+  padding-block: var(--space-2);
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.nav__links a:hover {
+  color: var(--color-primary);
+}
+
+.nav__cta {
+  display: none; /* Hidden on mobile, shown at 768px+ */
+}
+
+.nav__toggle {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: var(--space-2);
+  min-height: 44px;
+  min-width: 44px;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav__toggle-bar {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--color-neutral-900);
+  border-radius: var(--radius-full);
+  transition: transform var(--transition-fast), opacity var(--transition-fast);
+}
+
+/* Open state — toggled by JS adding .nav--open to nav */
+.nav--open .nav__toggle-bar:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.nav--open .nav__toggle-bar:nth-child(2) {
+  opacity: 0;
+}
+
+.nav--open .nav__toggle-bar:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+.nav--open .nav__links {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: var(--color-white);
+  padding: var(--space-6) var(--container-px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* ===================================================================
+   8. Buttons
+   =================================================================== */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-6);
+  min-height: 44px;
+  min-width: 44px;
+  font-size: var(--text-base);
+  font-weight: 600;
+  border-radius: var(--radius-md);
+  transition: background-color var(--transition-fast), color var(--transition-fast), box-shadow var(--transition-fast), transform var(--transition-fast);
+  cursor: pointer;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.btn:focus-visible {
+  outline: 3px solid var(--color-accent);
+  outline-offset: 3px;
+}
+
+.btn--primary {
+  background-color: var(--color-accent);
+  color: var(--color-white);
+}
+
+.btn--primary:hover {
+  background-color: var(--color-accent-dark);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-1px);
+}
+
+.btn--secondary {
+  background-color: transparent;
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+}
+
+.btn--secondary:hover {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.btn--full-width {
+  width: 100%;
+}
+
+/* Phone icon inside button */
+.btn svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+/* ===================================================================
+   9. Hero Section
+   =================================================================== */
+
+.hero {
+  position: relative;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: var(--color-neutral-900);
+}
+
+.hero__background {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: var(--z-below);
+  opacity: 0.4; /* Darken for text contrast */
+}
+
+/* Mobile: hero container and grid must be static so absolute photo targets .hero */
+.hero .container,
+.hero-grid {
+  position: static;
+}
+
+.hero__content {
+  position: relative;
+  z-index: var(--z-base);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-block: var(--space-24) var(--space-12);
+  color: var(--color-white);
+}
+
+.hero__headline {
+  color: var(--color-white);
+  margin-bottom: var(--space-4);
+}
+
+.hero__subheadline {
+  font-size: var(--text-lg);
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: var(--space-8);
+  line-height: 1.5;
+}
+
+.hero__ctas {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  margin-bottom: var(--space-8);
+}
+
+/* Trust badges glued to bottom on mobile */
+.hero__trust-badges {
+  margin-top: auto;
+  padding-top: var(--space-8);
+}
+
+.trust-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  justify-content: flex-start;
+}
+
+.trust-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-4);
+  background: rgba(255, 255, 255, 0.15);
+  -webkit-backdrop-filter: blur(12px) saturate(180%);
+  backdrop-filter: blur(12px) saturate(180%);
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  border-radius: var(--radius-full);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--color-white);
+}
+
+.trust-badge svg {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+/* ===================================================================
+   10. Sticky Bottom Call Bar (Mobile Only)
+   =================================================================== */
+
+.sticky-call-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: var(--z-toast);
+  background: var(--color-accent);
+  color: var(--color-white);
+  padding: var(--space-4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  box-shadow: var(--shadow-xl);
+  font-size: var(--text-base);
+  font-weight: 700;
+  text-align: center;
+}
+
+.sticky-call-bar svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+/* ===================================================================
+   11. Trust Bar Section
+   =================================================================== */
+
+.trust-bar {
+  background: var(--color-primary);
+  color: var(--color-white);
+  padding-block: var(--space-8);
+}
+
+.trust-bar__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-6);
+  text-align: center;
+}
+
+.trust-bar__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.trust-bar__icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: var(--radius-lg);
+}
+
+.trust-bar__icon svg {
+  width: 28px;
+  height: 28px;
+}
+
+.trust-bar__label {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+/* ===================================================================
+   12. Services Section
+   =================================================================== */
+
+.services {
+  background: var(--color-white);
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: var(--space-12);
+}
+
+.section-header__subtitle {
+  font-size: var(--text-base);
+  color: var(--color-neutral-700);
+  margin-bottom: var(--space-3);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-accent);
+}
+
+.section-header h2 {
+  margin-bottom: var(--space-4);
+}
+
+.section-header__description {
+  font-size: var(--text-lg);
+  color: var(--color-neutral-700);
+  max-width: 700px;
+  margin-inline: auto;
+}
+
+.services__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-6);
+}
+
+.service-card {
+  background: var(--color-white);
+  border: 1px solid var(--color-neutral-100);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  transition: box-shadow var(--transition-base), transform var(--transition-base), border-color var(--transition-base);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.service-card:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-4px);
+  border-color: var(--color-accent);
+}
+
+.service-card__icon {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-neutral-50);
+  border: 2px solid var(--color-accent);
+  border-radius: var(--radius-lg);
+  margin-bottom: var(--space-4);
+}
+
+.service-card__icon svg {
+  width: 32px;
+  height: 32px;
+  color: var(--color-accent);
+}
+
+.service-card h3 {
+  font-size: var(--text-xl);
+  margin-bottom: var(--space-3);
+  color: var(--color-primary);
+}
+
+.service-card p {
+  font-size: var(--text-sm);
+  color: var(--color-neutral-700);
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+
+/* ===================================================================
+   13. Stats Section
+   =================================================================== */
+
+.stats {
+  background: var(--color-neutral-50);
+}
+
+.stats__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-8);
+  text-align: center;
+}
+
+.stat {
+  padding: var(--space-6);
+  position: relative;
+}
+
+/* Vertical divider between stats */
+.stat:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 60%;
+  background: var(--color-neutral-400);
+}
+
+.stat__number {
+  font-size: var(--text-4xl);
+  font-weight: 700;
+  font-family: var(--font-heading);
+  color: var(--color-accent);
+  margin-bottom: var(--space-2);
+  display: block;
+}
+
+.stat__label {
+  font-size: var(--text-sm);
+  color: var(--color-neutral-700);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* ===================================================================
+   14. About Section
+   =================================================================== */
+
+.about {
+  background: var(--color-white);
+}
+
+.about__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-10);
+  align-items: center;
+}
+
+.about__image-wrapper {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+  border-radius: var(--radius-lg);
+}
+
+.about__image-wrapper img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about__content h2 {
+  margin-bottom: var(--space-6);
+}
+
+.about__content p {
+  font-size: var(--text-base);
+  color: var(--color-neutral-700);
+  line-height: 1.7;
+  margin-bottom: var(--space-4);
+}
+
+.about__owner {
+  margin-top: var(--space-6);
+  padding-top: var(--space-6);
+  border-top: 1px solid var(--color-neutral-100);
+}
+
+.about__owner-name {
+  font-size: var(--text-lg);
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: var(--space-1);
+}
+
+.about__owner-title {
+  font-size: var(--text-sm);
+  color: var(--color-neutral-700);
+  font-weight: 500;
+}
+
+/* ===================================================================
+   15. Testimonials Section
+   =================================================================== */
+
+.testimonials {
+  background: var(--color-neutral-50);
+}
+
+.testimonials__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-6);
+}
+
+.testimonial-card {
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial-card__stars {
+  display: flex;
+  gap: var(--space-1);
+  margin-bottom: var(--space-4);
+}
+
+.testimonial-card__stars svg {
+  width: 20px;
+  height: 20px;
+  color: #FFA500; /* Star gold */
+}
+
+.testimonial-card__text {
+  font-size: var(--text-base);
+  color: var(--color-neutral-700);
+  line-height: 1.7;
+  margin-bottom: var(--space-4);
+  flex: 1;
+}
+
+.testimonial-card__author {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--color-neutral-100);
+}
+
+.testimonial-card__author-info {
+  flex: 1;
+}
+
+.testimonial-card__author-name {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.testimonial-card__author-date {
+  font-size: var(--text-xs);
+  color: var(--color-neutral-700);
+}
+
+/* ===================================================================
+   16. Service Area Section
+   =================================================================== */
+
+.service-area {
+  background: var(--color-white);
+}
+
+.service-area__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-10);
+  align-items: start;
+}
+
+.map-embed {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  height: 400px;
+}
+
+.map-embed iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.service-area__cities {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-4);
+}
+
+.service-area__city {
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-neutral-50);
+  border-radius: var(--radius-md);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--color-neutral-700);
+  text-align: center;
+  border: 1px solid var(--color-neutral-100);
+  transition: background-color var(--transition-fast), border-color var(--transition-fast);
+}
+
+.service-area__city:hover {
+  background: var(--color-accent);
+  color: var(--color-white);
+  border-color: var(--color-accent);
+}
+
+/* ===================================================================
+   17. Contact Section
+   =================================================================== */
+
+.contact {
+  background: var(--color-neutral-50);
+}
+
+.contact__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-10);
+}
+
+.contact__info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.contact-info-item {
+  display: flex;
+  gap: var(--space-4);
+}
+
+.contact-info-item__icon {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-accent);
+  color: var(--color-white);
+  border-radius: var(--radius-lg);
+}
+
+.contact-info-item__icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.contact-info-item__content h3 {
+  font-size: var(--text-lg);
+  margin-bottom: var(--space-2);
+  color: var(--color-primary);
+}
+
+.contact-info-item__content p {
+  font-size: var(--text-base);
+  color: var(--color-neutral-700);
+  margin-bottom: var(--space-1);
+}
+
+.contact-info-item__content a {
+  color: var(--color-accent);
+  font-weight: 600;
+  transition: color var(--transition-fast);
+}
+
+.contact-info-item__content a:hover {
+  color: var(--color-accent-dark);
+  text-decoration: underline;
+}
+
+/* Form Styles */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  background: var(--color-white);
+  padding: var(--space-8);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+label {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-neutral-900);
+}
+
+.form-input {
+  padding: var(--space-3) var(--space-4);
+  border: 1.5px solid var(--color-neutral-400);
+  border-radius: var(--radius-md);
+  font-size: var(--text-base);
+  min-height: 44px;
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+  background: var(--color-white);
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 3px rgba(var(--color-accent-rgb), 0.15);
+}
+
+textarea.form-input {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.form-error {
+  font-size: var(--text-xs);
+  color: #dc2626;
+  min-height: 1.25rem;
+}
+
+/* ===================================================================
+   18. Footer
+   =================================================================== */
+
+footer[aria-label="Site footer"] {
+  background: var(--color-primary);
+  color: var(--color-white);
+  padding-block: var(--space-16) var(--space-8);
+}
+
+.footer__container {
+  display: grid;
+  gap: var(--space-10);
+  grid-template-columns: 1fr;
+}
+
+.footer__brand {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.footer__logo {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 6px;
+  padding: 6px 12px;
+}
+
+.footer__logo img {
+  height: 40px;
+  width: auto;
+}
+
+.footer__tagline {
+  font-size: var(--text-sm);
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.6;
+}
+
+.footer__section-title {
+  font-size: var(--text-base);
+  font-weight: 700;
+  margin-bottom: var(--space-4);
+  color: var(--color-white);
+}
+
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.footer__links a {
+  font-size: var(--text-sm);
+  color: rgba(255, 255, 255, 0.8);
+  transition: color var(--transition-fast);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.footer__links a:hover {
+  color: var(--color-accent-light);
+}
+
+.footer__social {
+  display: flex;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-full);
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--color-white);
+  transition: background var(--transition-fast), transform var(--transition-fast);
+}
+
+.social-icon:hover {
+  background: var(--color-accent);
+  transform: translateY(-2px);
+}
+
+.social-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.footer__license {
+  font-size: var(--text-xs);
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: var(--space-2);
+}
+
+.footer__credit {
+  font-size: var(--text-xs);
+  color: rgba(255, 255, 255, 0.7);
+  padding-top: var(--space-8);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+}
+
+.footer__credit a {
+  color: var(--color-accent-light);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+/* ===================================================================
+   19. Scroll Reveal Animations
+   =================================================================== */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(32px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.92);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Initial hidden state */
+.reveal {
+  opacity: 0;
+}
+
+.reveal.is-visible {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.reveal--fade.is-visible {
+  animation: fadeIn 0.8s ease forwards;
+}
+
+.reveal--scale.is-visible {
+  animation: scaleIn 0.5s ease forwards;
+}
+
+/* Staggered children */
+.reveal-group .reveal:nth-child(1) { animation-delay: 0ms; }
+.reveal-group .reveal:nth-child(2) { animation-delay: 100ms; }
+.reveal-group .reveal:nth-child(3) { animation-delay: 200ms; }
+.reveal-group .reveal:nth-child(4) { animation-delay: 300ms; }
+.reveal-group .reveal:nth-child(5) { animation-delay: 400ms; }
+.reveal-group .reveal:nth-child(6) { animation-delay: 500ms; }
+
+/* Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .reveal,
+  .reveal.is-visible {
+    animation: none;
+    opacity: 1;
+  }
+}
+
+/* ===================================================================
+   20. Breakpoints
+   =================================================================== */
+
+/* Tablet portrait — 768px */
+@media (min-width: 768px) {
+  /* Navigation */
+  .nav__links {
+    display: flex;
+  }
+
+  .nav__toggle {
+    display: none;
+  }
+
+  .nav__cta {
+    display: inline-flex; /* Show phone CTA on tablet+ */
+  }
+
+  /* Sticky call bar hidden on desktop */
+  .sticky-call-bar {
+    display: none;
+  }
+
+  /* Hero CTAs horizontal */
+  .hero__ctas {
+    flex-direction: row;
+  }
+
+  /* Trust badges */
+  .trust-badges {
+    justify-content: flex-start;
+  }
+
+  /* Trust bar grid */
+  .trust-bar__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Services grid */
+  .services__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Stats grid */
+  .stats__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  /* About grid */
+  .about__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* Testimonials grid */
+  .testimonials__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Service area grid */
+  .service-area__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .service-area__cities {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Contact grid */
+  .contact__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* Footer */
+  .footer__container {
+    grid-template-columns: 2fr 1fr 1fr;
+  }
+}
+
+/* Tablet landscape / small desktop — 1024px */
+@media (min-width: 1024px) {
+  /* Hero: restore relative positioning for absolute overlays */
+  .hero .container,
+  .hero-grid {
+    position: relative;
+  }
+
+  /* Trust bar grid */
+  .trust-bar__grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  /* Services grid */
+  .services__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Testimonials grid */
+  .testimonials__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Service area cities */
+  .service-area__cities {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Footer */
+  .footer__container {
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+  }
+}
+
+/* Desktop — 1200px */
+@media (min-width: 1200px) {
+  /* Services grid max 4 columns */
+  .services__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Service area cities */
+  .service-area__cities {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Large desktop — 1440px */
+@media (min-width: 1440px) {
+  /* Container max-width already handles this via --container-max */
+  /* Subtle refinements only */
+}
